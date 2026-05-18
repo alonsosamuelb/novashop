@@ -62,7 +62,7 @@ export APP_URL=http://localhost/novashop
 export ASSET_URL=http://localhost/novashop/public/assets
 ```
 
-6. Asegurate de que Apache puede leer la carpeta del proyecto:
+6.Apache puede leer la carpeta del proyecto:
 
 ```bash
 chmod 755 /Applications/XAMPP/xamppfiles/htdocs/novashop
@@ -76,9 +76,9 @@ http://localhost/novashop
 
 ## Credenciales de prueba
 
-- Administrador: `admin@novashop.local` / `Admin1234!`
-- Empleado: `empleado@novashop.local` / `Empleado1234!`
-- Cliente: `cliente@novashop.local` / `Cliente1234!`
+- Administrador: `admin@novashop.com` / `12345678`
+- Empleado: `empleado@novashop.com` / `12345678`
+- Cliente: `cliente@novashop.com` / `12345678`
 
 ## Integracion externa
 
@@ -89,11 +89,3 @@ storage/logs/order_emails.log
 ```
 
 Esto simula el envio de correo y permite verificar la funcionalidad sin instalar librerias externas.
-
-## Mejoras opcionales
-
-- Integrar PHPMailer real con Composer
-- Recuperacion de contrasena
-- Gestion de imagenes por upload validado
-- Exportacion CSV o PDF de informes
-- Paginacion avanzada en paneles internos

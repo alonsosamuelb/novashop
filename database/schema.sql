@@ -148,9 +148,9 @@ INSERT INTO configuracion (clave, valor) VALUES
 ('productos_por_pagina', '9');
 
 INSERT INTO usuarios (id, nombre, apellidos, email, password, telefono, dni, rol, activo, ultimo_acceso) VALUES
-(1, 'Ana', 'Admin Lopez', 'admin@novashop.local', '$2y$10$0GSgeS3VmQPCb9ZK6f2zsO9nDKlcWoWJp0VkFqsT.zRqtqo7Pl6qe', '600111111', '11111111A', 'administrador', 1, NOW()),
-(2, 'Diego', 'Empleado Ruiz', 'empleado@novashop.local', '$2y$10$NeFy9ZDXEnXVoMrmYXpoNeGTiW6MdcBIXvV.5xi6Z0NlIHhcuawY6', '600222222', '22222222B', 'empleado', 1, NOW()),
-(3, 'Lucia', 'Cliente Perez', 'cliente@novashop.local', '$2y$10$OuyNAXYajw4WwNB0kX3.a.S82FvQIMewaAWAHwb6qNST5m.xFjzxu', '600333333', '33333333C', 'cliente', 1, NOW()),
+(1, 'Samuel', 'Alonso', 'admin@novashop.com', '$2y$10$tbzxSyAzxltHhkr8WOwUc.3341P9iK1TNpuA4AVqqS12bsVeLfaki', '600111111', '11111111A', 'administrador', 1, NOW()),
+(2, 'Diego', 'Empleado Ruiz', 'empleado@novashop.com', '$2y$10$tbzxSyAzxltHhkr8WOwUc.3341P9iK1TNpuA4AVqqS12bsVeLfaki', '600222222', '22222222B', 'empleado', 1, NOW()),
+(3, 'Lucia', 'Cliente Perez', 'cliente@novashop.com', '$2y$10$tbzxSyAzxltHhkr8WOwUc.3341P9iK1TNpuA4AVqqS12bsVeLfaki', '600333333', '33333333C', 'cliente', 1, NOW()),
 (4, 'Mario', 'Cliente Baja', 'cliente.inactivo@novashop.local', '$2y$10$OuyNAXYajw4WwNB0kX3.a.S82FvQIMewaAWAHwb6qNST5m.xFjzxu', '600444444', '44444444D', 'cliente', 0, NULL);
 
 INSERT INTO categorias (id, parent_id, nombre, slug, descripcion, imagen, orden, activo) VALUES
