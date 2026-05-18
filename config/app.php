@@ -2,13 +2,13 @@
 
 return [
     'name' => 'NovaShop',
-    'env' => 'local',
-    'debug' => true,
-    'timezone' => 'Europe/Madrid',
-    'locale' => 'es_ES',
+    'env' => getenv('APP_ENV') ?: 'local',
+    'debug' => filter_var(getenv('APP_DEBUG') ?: 'true', FILTER_VALIDATE_BOOLEAN),
+    'timezone' => getenv('APP_TIMEZONE') ?: 'Europe/Madrid',
+    'locale' => getenv('APP_LOCALE') ?: 'es_ES',
 
-    'url' => 'http://localhost/novashop',
-    'asset_url' => 'http://localhost/novashop/public/assets',
+    'url' => getenv('APP_URL') ?: 'http://localhost/novashop',
+    'asset_url' => getenv('ASSET_URL') ?: 'http://localhost/novashop/public/assets',
 
     'currency' => 'EUR',
     'currency_symbol' => 'EUR',
@@ -48,7 +48,7 @@ return [
     'mail' => [
         'enabled' => true,
         'driver' => 'simulated_log',
-        'from_email' => 'noreply@localhost',
-        'from_name' => 'NovaShop',
+        'from_email' => getenv('MAIL_FROM_EMAIL') ?: 'noreply@localhost',
+        'from_name' => getenv('MAIL_FROM_NAME') ?: 'NovaShop',
     ],
 ];

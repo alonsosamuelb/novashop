@@ -2,11 +2,11 @@
 
 return [
     'driver' => 'mysql',
-    'host' => 'localhost',
-    'port' => 3306,
-    'database' => 'ecommerce_mvc',
-    'username' => 'root',
-    'password' => '',
+    'host' => getenv('DB_HOST') ?: 'localhost',
+    'port' => (int) (getenv('DB_PORT') ?: 3306),
+    'database' => getenv('DB_DATABASE') ?: 'ecommerce_mvc',
+    'username' => getenv('DB_USERNAME') ?: 'root',
+    'password' => getenv('DB_PASSWORD') ?: '',
     'charset' => 'utf8mb4',
     'collation' => 'utf8mb4_unicode_ci',
     'options' => [

@@ -2,6 +2,8 @@
 
 Proyecto final de tienda online desarrollado con PHP nativo, arquitectura MVC, MySQL, PDO, Bootstrap 5 y JavaScript.
 
+Repositorio: [github.com/alonsosamuelb/novashop](https://github.com/alonsosamuelb/novashop)
+
 ## Funcionalidades cubiertas
 
 - Catalogo dinamico de productos
@@ -45,12 +47,31 @@ storage/
 ## Instalacion
 
 1. Copia el proyecto dentro de `htdocs`.
-2. Crea una base de datos MySQL importando [database/schema.sql](/Applications/XAMPP/xamppfiles/htdocs/website ecommerce/database/schema.sql).
-3. Revisa [config/database.php](/Applications/XAMPP/xamppfiles/htdocs/website ecommerce/config/database.php) y ajusta host, usuario o password si fuese necesario.
-4. Abre en navegador:
+2. Crea una base de datos MySQL llamada `ecommerce_mvc`.
+3. Importa [database/schema.sql](/Applications/XAMPP/xamppfiles/htdocs/novashop/database/schema.sql).
+4. Revisa [config/database.php](/Applications/XAMPP/xamppfiles/htdocs/novashop/config/database.php) si necesitas cambiar host, usuario o password.
+5. Opcionalmente, define variables de entorno para no fijar esos valores en el codigo:
+
+```bash
+export DB_HOST=localhost
+export DB_PORT=3306
+export DB_DATABASE=ecommerce_mvc
+export DB_USERNAME=root
+export DB_PASSWORD=
+export APP_URL=http://localhost/novashop
+export ASSET_URL=http://localhost/novashop/public/assets
+```
+
+6. Asegurate de que Apache puede leer la carpeta del proyecto:
+
+```bash
+chmod 755 /Applications/XAMPP/xamppfiles/htdocs/novashop
+```
+
+7. Abre en navegador:
 
 ```text
-http://localhost/website%20ecommerce/
+http://localhost/novashop
 ```
 
 ## Credenciales de prueba
