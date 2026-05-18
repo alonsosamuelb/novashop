@@ -1,0 +1,6 @@
+.DS_Store
+
+/storage/logs/*.log
+/storage/logs/.gitkeep
+
+/uploads/
