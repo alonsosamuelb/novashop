@@ -74,12 +74,6 @@ chmod 755 /Applications/XAMPP/xamppfiles/htdocs/novashop
 http://localhost/novashop
 ```
 
-## Credenciales de prueba
-
-- Administrador: `admin@novashop.com` / `12345678`
-- Empleado: `empleado@novashop.com` / `12345678`
-- Cliente: `cliente@novashop.com` / `12345678`
-
 ## Integracion externa
 
 La confirmacion de pedido se registra en:
